@@ -19,9 +19,12 @@ Imports:
 Depends: 
     R (>= 4.1)
 Suggests: 
+    knitr,
     qvalue (>= 2.38.0),
+    rmarkdown,
     testthat (>= 3.0.0)
 Remotes: 
     jdstorey/qvalue
 URL: https://hustu.github.io/mydemo, https://github.com/hustu/mydemo
 BugReports: https://github.com/hustu/mydemo/issues
+VignetteBuilder: knitr

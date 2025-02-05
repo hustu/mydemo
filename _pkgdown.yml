@@ -1,0 +1,25 @@
+url: https://hustu.github.io/mydemo
+
+template:
+  bootstrap: 5
+
+navbar:
+  structure:
+    left: [reference, articles, news]
+    right: [search, github]
+  components:
+    github:
+      icon: fa-brands fa-github
+      href: https://github.com/hustu/mydemo
+      aria-label: Github
+
+reference:
+- title: Data
+  desc: Data generation
+  contents:
+  - sim_data
+- title: Analysis
+  desc: Data analysis
+  contents:
+  - himaconf
+

@@ -1,0 +1,26 @@
+---
+title: "Perform HIMA analysis"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Perform HIMA analysis}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Use below code to perform high dimensional mediation analysis.
+```{r setup}
+library(mydemo)
+dat <- sim_data(n = 300, p = 2000)
+X <- dat$X
+Y <- dat$Y
+M <- dat$M
+COV <- dat$COV
+himaconf(X, M, Y, COV, CONFmethod = "OW", MTmethod = "HIMA2")
+```
