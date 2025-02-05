@@ -1,25 +1,35 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# mydemo
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# mydemo 
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of mydemo is to implement high dimensional mediation analysis
+The goal of mydemo is to implement high dimensional mediation analysis 
 with confounding adjustment.
 
 ## Installation
 
 You can install the development version of mydemo like so:
-
 ``` r
 devtools::install_github("hustu/mydemo")
 ```
 
 ## Example
-
-``` r
+```{r eval = FALSE}
 library(mydemo)
 dat <- sim_data(n = 300, p = 2000)
 X <- dat$X

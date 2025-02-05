@@ -1,2 +1,6 @@
+^renv$
+^renv\.lock$
 ^mydemo\.Rproj$
 ^\.Rproj\.user$
+^README\.Rmd$
+^LICENSE\.md$
